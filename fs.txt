@@ -29,6 +29,39 @@ echo $text > $filename
 esac
 done
 
+merge conflict:
+mkdir GitEx
+sudo apt update
+sudo apt install git
+mkdir GitEx
+cd GitEx
+git init
+git config --global user.name "Name"
+git config --global user.email "name@gmail.com"
+touch app.py 
+Add print statement in app.py
+code .
+git add .
+git commit -m "initial commit"
+git switch -c branch1
+Go to app.py, change the print statement
+git commit -am "First commit on branch1"
+git switch master
+Change print stmt in app.py
+git commit -am "Second commit on master"
+git merge branch1
+(You could see conflict error here)
+Go to VSCode, choose any one option
+git commit -am "Fixed Merge Conflict"
+Conflict Resolved and Merged
+
+git log --oneline
+(To view commits)
+
+
+
+
+
 
 DOCKER
 

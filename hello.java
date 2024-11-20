@@ -14,7 +14,7 @@ public class hello {
     
         // ask users to enter numbers
         System.out.println("Enter first number: 5");
-        number1 = 5;//input.nextDouble();
+        number1 = 10;//input.nextDouble();
     
         System.out.println("Enter second number: 5");
         number2 = 5; //input.nextDouble();
